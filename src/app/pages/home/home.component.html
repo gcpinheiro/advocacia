@@ -1,0 +1,139 @@
+<div class="container" fxLayout="column" fxLayoutAlign="start center">
+
+	<div class="sidenav" fxLayout="row" fxLayoutAlign="space-around center">
+		<div class="div-logo" >
+			<img src="./assets/logo-14.png" class="logo">
+		</div>
+
+		<div class="div-options"  fxLayout="row" fxLayoutAlign="center center">
+			<div class="options" fxLayout="row" fxLayoutAlign="space-around  center">
+				<span>Página Inicial</span>
+				<div class="line-options"></div>
+				<span>Sobre</span>
+				<div class="line-options"></div>
+				<span>Profissionais</span>
+				<div class="line-options"></div>
+				<span>Escritorios</span>
+				<div class="line-options"></div>
+				<span>Causas ganhas</span>
+				<div class="line-options"></div>
+				<span>Contatos</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="line-sidenav"></div>
+
+	<div class="content-one" fxLayout="column" fxLayoutAlign="center start">
+
+		<div fxLayout="column" fxLayoutAlign="space-between center" style="color: #FFF; font-weight: bolder; height: 40%;">
+
+			<div  fxLayout="row" fxLayoutAlign="center center" style=" width: 100%; background-color: rgba(61, 56, 48,0.7); height: 60%;">
+				<h1 style="font-size: 70px;">ADVOCACIA ESPECIALIZADA</h1>
+			</div>
+
+			<div style="width: 100%; background-color: rgba(61, 56, 48,0.7);">
+				<p style=" margin-top: 20px;">Advocacia moderna e dinâmica. Processos manejados de forma individualizada, com foco no melhor<br> resultado ao nosso cliente.</p>
+			</div>
+
+		</div>
+
+		<div fxLayout="row" fxLayoutAlign="space-between center" style=" width: 40%; margin-top: 20px;">
+
+			<button mat-stroked-button color="accent" style="width: 60%; height: 50px; border-radius: 20px;">Resolva seus problemas</button>
+			<button mat-stroked-button color="accent" style="margin-left: 30px; width: 40%; height: 50px; border-radius: 20px;">Especialidades</button>
+		</div>	
+
+	</div>	
+</div>
+
+<div class="content-two" fxLayout="column" fxLayoutAlign="center center">
+
+	<div fxLayout="row" fxLayoutAlign="center center">
+		<span class="titulo">Áreas de Atuação</span>
+	</div>
+	
+	<div class="container-informacoes" fxLayout="row" fxLayoutAlign="space-around center">
+		<div class="informacoes-colunas" fxLayout="column" fxLayoutAlign="start center">
+			<div class="div-icon" fxLayout="row" fxLayoutAlign="center center">
+				<i class="fas fa-gavel"></i>
+			</div>
+			<span class="subtitulo">Direito Previdenciário</span>
+			<span>
+				Dificuldades com aposentadoria e previdência e, por consequência, não consegue resolver seu problema? Seja qual for seu caso, contate a Salari Advogados para que nosso advogado previdenciário lhe auxilie com suas dúvidas. Dessa maneira, tentaremos chegar à resolução do seu problema.
+			</span>
+			
+		</div>
+
+		<div class="informacoes-colunas" fxLayout="column" fxLayoutAlign="start center">
+			<div class="div-icon" fxLayout="row" fxLayoutAlign="center center">
+				<i class="fas fa-suitcase"></i>
+			</div>
+			<span class="subtitulo">Direito Trabalhista</span>
+			<span>
+				Foi demitido e está com dúvidas sobre o cálculo da rescisão? Dúvidas com relação a desvio de função, demissão por justa causa, horas extras ou outros direitos trabalhistas feridos pelo empregador? A gente pode lhe auxiliar.
+			</span>
+			
+		</div>
+
+		<div class="informacoes-colunas" fxLayout="column" fxLayoutAlign="start center">
+			<div class="div-icon" fxLayout="row" fxLayoutAlign="center center">
+				<i class="fas fa-dollar-sign"></i>
+			</div>
+			<span class="subtitulo">Direito do Consumidor</span>
+			<span>
+				Se sentiu prejudicado por reajustes e juros abusivos? Fez compras pela internet e não recebeu? Teve nome indevidamente inserido no SPC/SERASA ou qualquer outro problema que fere os seus direitos como consumidor? Entre em contato e tenha suas dúvidas respondidas.
+			</span>
+		</div>
+
+	</div>
+	
+</div>
+
+<div class="content-three" fxLayout="row" fxLayoutAlign="start center">
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3598275238037!2d-38.500854485658735!3d-3.7315074972851328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74864798fdb37%3A0xd91dcfe0f64f94b1!2sR.%20Osvaldo%20Cruz%2C%20635%20-%20Meireles%2C%20Fortaleza%20-%20CE%2C%2060125-150!5e0!3m2!1spt-BR!2sbr!4v1616623290475!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy"></iframe>	
+	
+</div>
+
+
+
+<div class="footer" fxLayout="row" fxLayoutAlign="space-around center">
+
+	<div class="div-logo-footer" fxLayout="column" fxLayoutAlign="space-between center">
+		<span style="font-size: 30px; font-weight: bold; color: ">Assine nossa news latter</span>
+		<span style="margin-top: 10px;">você receberá informações sobre as atividades, notícias e eventos</span>
+		<div class="form-email">
+		  <mat-form-field appearance="outline" color="accent">
+		    <mat-label style="color: #FFF">Digite seu email</mat-label>
+		    <input matInput placeholder="nome@email.com" [formControl]="email" required>
+		    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+		  </mat-form-field>
+		</div>
+		<button mat-flat-button color="accent" style="width: 70%; height: 50px; border-radius: 20px;">Enviar</button>
+
+	</div>
+
+	<div class="footer-informations" fxLayout="column" fxLayoutAlign="start start">
+		<div style="margin-bottom: 10px;">
+			<i class="fa fa-map-marker" aria-hidden="true" style="color: white; font-size: 20px; margin-right: 10px;"></i>
+			<span>Localização</span>
+		</div>
+		<span>Av.13 de maio, 7777 - Benfica </span>
+		<span>Fortaleza - CE | CEP: 61.777-777</span>
+		<span>Fone: (85) 3777-7777 | Fax: (85) 3777.7777</span>
+	</div>
+
+	<div class="fale-conosco" fxLayout="column" fxLayoutAlign="start start">
+		<span>Redes Sociais</span>
+		<div fxLayout="row" fxLayoutAlign="start center" class="icons">
+			<i id="instagram" class="fab fa-instagram" style=" margin-left: 0px;"></i>
+			<i id="facebook" class="fab fa-facebook"></i>
+			<i id="twitter" class="fab fa-twitter" ></i>
+			<i id="whatsapp" class="fab fa-whatsapp"></i>
+		</div>
+		
+	</div>
+</div>
+
+
